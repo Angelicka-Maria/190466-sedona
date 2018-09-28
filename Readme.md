@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юрий Литвиненко](https://up.htmlacademy.ru/adaptive/15/user/190466).
-* Наставник: `Неизвестно`.
+* Наставник: Николай Громов.
 
 ---
 
