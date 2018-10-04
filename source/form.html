@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Седона:Форма отзыва</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="mobile-menu hidded">
+      <button class="mobile-menu-close" type="button">закрыть меню</button>
+      <ul class="mobile-menu-list nav-list">
+        <li class="nav-list__item"><a href="index.html">главная</a></li>
+        <li class="nav-list__item"><a href="photo.html">фото и видео</a></li>
+        <li class="nav-list__item nav-list__item--active"><a>форма отзыва</a></li>
+        <li class="nav-list__item"><a href="https://htmlacademy.ru/">html academy</a></li>
+      </ul>
+    </nav>
+
+    <nav class="top-menu">
+      <img class="top-menu__logo" src="http://placehold.it/102x83" alt="logo" width="102" height="83">
+      <button class="mobile-menu-open" type="button">открыть меню</button>
+      <button class="mobile-menu-close hidded" type="button">закрыть меню</button>
+    </nav>
+
+  </header>
+
+  <main>
+    <div class="main-img">
+      <img src="http://placehold.it/320x389" width="320" height="389" alt="welcome">
+    </div>
+    <div class="intro">
+      <h2 class="intro_caption">оставьте свой отзыв</h2>
+      <p class="intro_text">помогите нашим отелям стать лучше!</p>
+      <p>оставьте отзыв о них, а так же о посещенных вами достопримечательностях</p>
+    </div>
+
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="feedback-form__caption">представтесь</p>
+      <p class="feedback-form__text">имя*:</p>
+      <input class="feedback-form__input" type="text" pattern="^[А-Яа-яЁё\s]+$" name="name" placeholder="имя">
+      <p class="feedback-form__text">фамилия*:</p>
+      <input class="feedback-form__input" type="text" pattern="^[А-Яа-яЁё\s]+$" name="surname" placeholder="фамилия">
+      <p class="feedback-form__text">отчество*:</p>
+      <input class="feedback-form__input" type="text" pattern="^[А-Яа-яЁё\s]+$" name="middle-name" placeholder="отчество">
+
+      <p class="feedback-form__caption">контактная информация:</p>
+      <p class="feedback-form__text">контактный телефон*:</p>
+      <input class="feedback-form__input" type="tel" pattern="^[ 0-9]+$" name="tel" placeholder="введите телефон">
+      <p class="feedback-form__text">электронная почта*:</p>
+      <input class="feedback-form__input" type="email" name="email" placeholder="введите e-mail">
+
+      <p class="feedback-form__caption">ваше общее впечатление:</p>
+      <label>
+        <input type="radio" name="impression" value="+" checked>скорее положительное
+      </label>
+      <label>
+        <input type="radio" name="impression" value="-">скорее отрицательное
+      </label>
+      <label>
+        <input type="radio" name="impression" value="?">затрудняюсь ответить<br>
+      </label>
+
+      <p class="feedback-form__caption">посещенные достопримечательности:</p>
+      <label>
+        <input type="checkbox" name="visited" value="devil's bridge" checked>мост дьявола
+      </label>
+      <label>
+        <input type="checkbox" name="visited" value="mountain bell" checked>гора-колокол
+      </label>
+      <label>
+        <input type="checkbox" name="visited" value="slide park" checked>гора-колокол
+      </label>
+      <label>
+        <input type="checkbox" name="visited" value="red rocks">красные скалы
+      </label>
+
+      <p class="feedback-form__caption">пишите свои эмоции:</p>
+      <textarea class="feedback-form__message" name="message" rows="3" placeholder="опишите подробно все свои восторги"></textarea>
+
+      <button class="button" type="submit">отправить отзыв</button>
+
+      <article class="poupup-error hidded">
+        <h2 class="poupup-error__caption"> что-то пошло не так</h2>
+        <p class="poupup-error__text">проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="button" type="button">отправить отзыв</button>
+      </article>
+
+      <article class="poupup-success hidded">
+        <h2 class="poupup-success__caption"> что-то пошло не так</h2>
+        <p class="poupup-success__text">проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="button" type="button">закрыть окно</button>
+      </article>
+
+    </form>
+
+  </main>
+
+  <footer class="page-footer">
+
+    <a class="link-visitsedona" href="https://htmlacademy.ru/intensive/adaptive">#VISITSEDONA</a>
+
+    <div class="social">
+      <a class="social__link social__link_tw" href="https://twitter.com">tw</a>
+      <a class="social__link social__link_fb" href="https://www.facebook.com">fb</a>
+      <a class="social__link social__link_youtube" href="https://www.youtube.com">youtube</a>
+    </div>
+
+    <div class="academy">
+      <span class="academy__text">разработано</span>
+      <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
+
+  </footer>
+
+
+
+
+</body>

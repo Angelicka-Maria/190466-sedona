@@ -1,12 +1,118 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+<head>
+  <meta charset="utf-8">
+  <title>Седона</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+
+    <nav class="mobile-menu hidded">
+      <button class="mobile-menu-close" type="button">закрыть меню</button>
+      <ul class="mobile-menu-list nav-list">
+        <li class="nav-list__item nav-list__item--active"><a>главная</a></li>
+        <li class="nav-list__item"><a href="photo.html">фото и видео</a></li>
+        <li class="nav-list__item"><a href="form.html">форма отзыва</a></li>
+        <li class="nav-list__item"><a href="https://htmlacademy.ru/">html academy</a></li>
+      </ul>
+    </nav>
+
+    <nav class="top-menu">
+      <img class="top-menu__logo" src="http://placehold.it/102x83" alt="logo" width="102" height="83">
+      <button class="mobile-menu-open" type="button">открыть меню</button>
+      <button class="mobile-menu-close hidded" type="button">закрыть меню</button>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
+
+    <div class="main-img">
+      <img src="http://placehold.it/320x389" width="320" height="389" alt="welcome">
+    </div>
+    <div class="intro">
+      <h2 class="intro_caption">седона - небольшой городок в аризоне, заслуживающий большего!</h2>
+      <span class="intro_text">рассмотрим 5 причин, по которым седона круче, чем гранд-каньон!</span>
+    </div>
+
+    <div class="benefit">
+      <section class="benefit__inner benefit__inner--theme-blue">
+        <h3>настоящий городок</h3>
+        <p>— №1 —</p>
+        <p>седона — не аттракцион для туристов, там течет своя жизнь</p>
+      </section>
+      <div class="benefit__inner-img">
+        <img src="http://placehold.it/320x389" width="320" height="389" alt="дом и флаг">
+      </div>
+      <section class="benefit__inner-down benefit__inner-down--theme-white">
+        <h4>жилье</h4>
+        <p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+      </section>
+      <section class="benefit__inner-down benefit__inner-down--theme-white">
+        <h4>сувениры</h4>
+        <p>не только китайского, но и местного производства!</p>
+      </section>
+      <section class="benefit__inner-down benefit__inner-down--theme-white">
+        <h4>еда</h4>
+        <p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+      </section>
+    </div>
+
+    <div class="benefit">
+      <section class="benefit__inner benefit__inner--theme-blue">
+        <h3>там есть мост дьявола</h3>
+        <p>— №2 —</p>
+        <p>да, по нему можно пройти! если конечно вы осмелитесь</p>
+      </section>
+      <div class="benefit__inner-img">
+        <img src="http://placehold.it/320x389" width="320" height="389" alt="мост дьявола">
+      </div>
+      <section class="benefit__inner benefit__inner--theme-gray">
+        <h4>небольшая площадь</h4>
+        <p>— №3 —</p>
+        <p>все интересные места находятся очень близко</p>
+      </section>
+      <section class="benefit__inner benefit__inner--heme-gray">
+        <h4>красивая дорога</h4>
+        <p>— №4 —</p>
+        <p>ехать в седону из лас-вегаса совсем не скучно</p>
+      </section>
+      <section class="benefit__inner benefit__inner--heme-gray">
+        <h4>мало туристов</h4>
+        <p>— №5—</p>
+        <p>большинство едет в гранд каньон и толпится там</p>
+      </section>
+    </div>
+
+    <div class="search">
+      <h5 class="search__caption">заинтересовались?</h5>
+      <p class="search__text">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <a class="button" href="#">найти гостиницу</a>
+    </div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18050597425!2d-111.83015798499453!3d34.8543733810358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1538593628814" width="320" height="350" style="border:0" allowfullscreen></iframe>
+
+  </main>
+
+  <footer class="page-footer">
+
+    <a class="link-visitsedona" href="https://htmlacademy.ru/intensive/adaptive">#VISITSEDONA</a>
+
+    <div class="social">
+      <a class="social__link social__link_tw" href="https://twitter.com">tw</a>
+      <a class="social__link social__link_fb" href="https://www.facebook.com">fb</a>
+      <a class="social__link social__link_youtube" href="https://www.youtube.com">youtube</a>
+    </div>
+
+    <div class="academy">
+      <span class="academy__text">разработано</span>
+      <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
+
+  </footer>
+
+</body>
+
 </html>
