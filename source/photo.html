@@ -9,101 +9,126 @@
 <body>
   <header class="page-header">
 
-    <nav class="mobile-menu hidded">
-      <button class="mobile-menu-close" type="button">закрыть меню</button>
-      <ul class="mobile-menu-list nav-list">
-        <li class="nav-list__item"><a href="index.html">главная</a></li>
-        <li class="nav-list__item nav-list__item--active"><a>фото и фидео</a></li>
-        <li class="nav-list__item"><a href="form.html">форма отзыва</a></li>
-        <li class="nav-list__item"><a href="https://htmlacademy.ru/">html academy</a></li>
+    <nav class="main-nav">
+      <button class="main-nav__close" type="button">Закрыть меню</button>
+      <ul class="nav-list">
+        <li class="nav-list__item"><a href="index.html">Главная</a></li>
+        <li class="nav-list__item  nav-list__item--active"><a>Фото и видео</a></li>
+        <li class="nav-list__item"><a href="form.html">Форма отзыва</a></li>
+        <li class="nav-list__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
       </ul>
+      <img class="top-menu__logo" src="http://placehold.it/102x83" alt="logo" width="102" height="83">
     </nav>
 
-    <nav class="top-menu">
-      <img class="top-menu__logo" src="http://placehold.it/102x83" alt="logo" width="102" height="83">
-      <button class="mobile-menu-open" type="button">открыть меню</button>
-      <button class="mobile-menu-close hidded" type="button">закрыть меню</button>
-    </nav>
   </header>
 
   <main>
-    <h1 class="visually-hidden">Седона</h1>
 
-    <div class="main-img main-img--position">
-      <img src="http://placehold.it/320x389" width="320" height="389" alt="welcome">
-    </div>
+    <img class="page-main__main-img" src="http://placehold.it/320x389" width="320" height="389" alt="Седона">
 
     <div class="intro">
-      <h2 class="intro_caption">фото и видео</h2>
-      <span class="intro_text">не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о политике и экономике</span>
+      <h1 class="intro__title">Фото и видео</h1>
+      <div class="intro__text">
+        <p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
+      </div>
     </div>
 
-    <figure class="foto">
-      <img class="foto-img" src="http://placehold.it/280x280" width="280" height="280" alt="дорога в закат">
-      <figcaption class="foto-signature">
-        <h3 class="foto-signature__caption">неродные просторы</h3>
-        <span class="foto-signature__text">автор фото:</span>
-        <span class="foto-signature__text">Борис</span>
-        <div class="foto-signature__count">1350</div>
+    <figure class="foto foto--width">
+      <a class="foto__img" href="#">
+        <img src="http://placehold.it/280x280" width="280" height="280" alt="Дорога в закат">
+      </a>
+      <figcaption class="foto__descr">
+        <div class="foto__wrap">
+          <h2 class="foto__title">Неродные просторы</h2>
+          <div class="foto__author">
+            <span>Автор фото: Борис</span>
+          </div>
+        </div>
+        <button class="foto__cont">Нравится</button>
+        <div class="foto__like">1350</div>
       </figcaption>
     </figure>
 
     <figure class="foto">
-      <img class="foto-img" src="http://placehold.it/280x280" width="280" height="280" alt="кактус на фоне гор">
-      <figcaption class="foto-signature">
-        <h3 class="foto-signature__caption">местная растительность</h3>
-        <span class="foto-signature__text">автор фото:</span>
-        <span class="foto-signature__text">Сергей</span>
-        <div class="foto-signature__count">143</div>
+      <a class="foto__img" href="#">
+        <img class="foto__img" src="http://placehold.it/280x280" width="280" height="280" alt="Кактус на фоне гор">
+      </a>
+      <figcaption class="foto__descr">
+        <div class="foto__wrap">
+          <h2 class="foto__title">Местная растительность</h2>
+          <div class="foto__author">
+            <span>Автор фото: Сергей</span>
+          </div>
+        </div>
+        <button class="foto__cont">Нравится</button>
+        <div class="foto__like">143</div>
       </figcaption>
     </figure>
 
     <figure class="foto">
-      <img class="foto-img" src="http://placehold.it/280x280" width="280" height="280" alt="дорога в горах">
-      <figcaption class="foto-signature">
-        <h3 class="foto-signature__caption">дорога на север</h3>
-        <span class="foto-signature__text">автор фото:</span>
-        <span class="foto-signature__text">Петр</span>
-        <div class="foto-signature__count">96</div>
+      <a class="foto__img" href="#">
+        <img class="foto__img" src="http://placehold.it/280x280" width="280" height="280" alt="Дорога в горах">
+      </a>
+      <figcaption class="foto__descr">
+        <div class="foto__wrap">
+          <h2 class="foto__title">Дорога на север</h2>
+          <div class="foto__author">
+            <span>Автор фото: Петр</span>
+          </div>
+        </div>
+        <button class="foto__cont">Нравится</button>
+        <div class="foto__like">96</div>
       </figcaption>
     </figure>
 
     <figure class="foto">
-      <img class="foto-img" src="http://placehold.it/280x280" width="280" height="280" alt="каменное образование мост дьявола">
-      <figcaption class="foto-signature">
-        <h3 class="foto-signature__caption">мост дьявола</h3>
-        <span class="foto-signature__text">автор фото:</span>
-        <span class="foto-signature__text">Антон</span>
+      <a class="foto__img" href="#">
+        <img class="foto__img" src="http://placehold.it/280x280" width="280" height="280" alt="Каменное образование Мост Дьявола">
+      </a>
+      <figcaption class="foto__descr">
+        <div class="foto__wrap">
+          <h2 class="foto-signature__caption">Мост Дьявола</h2>
+          <div class="foto__author">
+            <span>Автор фото: Антон</span>
+          </div>
+        </div>
+        <button class="foto__cont">Нравится</button>
         <div class="foto-signature__count">234</div>
       </figcaption>
     </figure>
 
     <article class="video">
-      <h3 class="video__caption">все еще сомневаетесь?</h3>
-      <p class="video__text">смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <video class="video__clip" src="#" controls poster="#"></video>
+      <h3 class="video__caption">Все еще сомневаетесь?</h3>
+      <div class="video__text">
+        <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      </div>
+      <video class="video__clip" src="#"></video>
+      <div class+="video__controls">
+        <button class="video__replay" type="button">replay</button>
+        <input class="video__time-line" type="range" min="0" max="100" step="1" value="100">
+        <button class="video__сс" type="button">CC</button>
+        <button class="video__full-screen" type="button">full-screen</button>
+      </div>
     </article>
 
   </main>
 
   <footer class="page-footer">
 
-    <a class="link-visitsedona" href="https://htmlacademy.ru/intensive/adaptive">#VISITSEDONA</a>
+    <a class="page-footer__link-visitsedona" href="https://htmlacademy.ru/intensive/adaptive">#VISITSEDONA</a>
 
     <div class="social">
-      <a class="social__link social__link_tw" href="https://twitter.com">tw</a>
-      <a class="social__link social__link_fb" href="https://www.facebook.com">fb</a>
-      <a class="social__link social__link_youtube" href="https://www.youtube.com">youtube</a>
+      <a class="social__link  social__link--tw" href="https://twitter.com">Twitter</a>
+      <a class="social__link  social__link--fb" href="https://www.facebook.com">Facebookb</a>
+      <a class="social__link  social__link--youtube" href="https://www.youtube.com">Youtube</a>
     </div>
 
-    <div class="academy">
-      <span class="academy__text">разработано</span>
-      <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <div class="page-footer__copyright">
+      <span class="page-footer__text">разработано</span>
+      <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
 
   </footer>
-
-
 </body>
 
 </html>

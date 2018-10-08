@@ -8,90 +8,131 @@
 
 <body>
   <header class="page-header">
-    <nav class="mobile-menu hidded">
-      <button class="mobile-menu-close" type="button">закрыть меню</button>
-      <ul class="mobile-menu-list nav-list">
-        <li class="nav-list__item"><a href="index.html">главная</a></li>
-        <li class="nav-list__item"><a href="photo.html">фото и видео</a></li>
-        <li class="nav-list__item nav-list__item--active"><a>форма отзыва</a></li>
-        <li class="nav-list__item"><a href="https://htmlacademy.ru/">html academy</a></li>
+
+    <nav class="main-nav">
+      <button class="main-nav__close" type="button">Закрыть меню</button>
+      <ul class="nav-list">
+        <li class="nav-list__item"><a href="index.html">Главная</a></li>
+        <li class="nav-list__item"><a href="photo.html">Фото и видео</a></li>
+        <li class="nav-list__item  nav-list__item--active"><a>Форма отзыва</a></li>
+        <li class="nav-list__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
       </ul>
-    </nav>
-
-    <nav class="top-menu">
       <img class="top-menu__logo" src="http://placehold.it/102x83" alt="logo" width="102" height="83">
-      <button class="mobile-menu-open" type="button">открыть меню</button>
-      <button class="mobile-menu-close hidded" type="button">закрыть меню</button>
     </nav>
-
   </header>
 
   <main>
-    <div class="main-img">
-      <img src="http://placehold.it/320x389" width="320" height="389" alt="welcome">
-    </div>
+    <img class="page-main__main-img" src="http://placehold.it/320x389" width="320" height="389" alt="Седона">
+
     <div class="intro">
-      <h2 class="intro_caption">оставьте свой отзыв</h2>
-      <p class="intro_text">помогите нашим отелям стать лучше!</p>
-      <p>оставьте отзыв о них, а так же о посещенных вами достопримечательностях</p>
+      <h2 class="intro__headline">Оставьте свой отзыв</h2>
+      <div class="intro__text">
+        <p>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях</p>
+      </div>
     </div>
 
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-      <p class="feedback-form__caption">представтесь</p>
-      <p class="feedback-form__text">имя*:</p>
-      <input class="feedback-form__input" type="text" pattern="^[А-Яа-яЁё\s]+$" name="name" placeholder="имя">
-      <p class="feedback-form__text">фамилия*:</p>
-      <input class="feedback-form__input" type="text" pattern="^[А-Яа-яЁё\s]+$" name="surname" placeholder="фамилия">
-      <p class="feedback-form__text">отчество*:</p>
-      <input class="feedback-form__input" type="text" pattern="^[А-Яа-яЁё\s]+$" name="middle-name" placeholder="отчество">
 
-      <p class="feedback-form__caption">контактная информация:</p>
-      <p class="feedback-form__text">контактный телефон*:</p>
-      <input class="feedback-form__input" type="tel" pattern="^[ 0-9]+$" name="tel" placeholder="введите телефон">
-      <p class="feedback-form__text">электронная почта*:</p>
-      <input class="feedback-form__input" type="email" name="email" placeholder="введите e-mail">
+      <div class="field-text">
 
-      <p class="feedback-form__caption">ваше общее впечатление:</p>
-      <label>
-        <input type="radio" name="impression" value="+" checked>скорее положительное
-      </label>
-      <label>
-        <input type="radio" name="impression" value="-">скорее отрицательное
-      </label>
-      <label>
-        <input type="radio" name="impression" value="?">затрудняюсь ответить<br>
-      </label>
+        <span class="field-text__headline">Представьтесь</span>
+        <label class="field-text__name">
+          <span class="field-text__name-text">Имя*:</span>
+          <input class="field-text__input" type="text" name="name" placeholder="Имя">
+        </label>
 
-      <p class="feedback-form__caption">посещенные достопримечательности:</p>
-      <label>
-        <input type="checkbox" name="visited" value="devil's bridge" checked>мост дьявола
-      </label>
-      <label>
-        <input type="checkbox" name="visited" value="mountain bell" checked>гора-колокол
-      </label>
-      <label>
-        <input type="checkbox" name="visited" value="slide park" checked>гора-колокол
-      </label>
-      <label>
-        <input type="checkbox" name="visited" value="red rocks">красные скалы
-      </label>
+        <label class="field-text__name">
+          <span class="field-text__name-text">Фамилия*:</span>
+          <input class="field-text__input" type="text" name="surname" placeholder="Фамилия">
+        </label>
 
-      <p class="feedback-form__caption">пишите свои эмоции:</p>
-      <textarea class="feedback-form__message" name="message" rows="3" placeholder="опишите подробно все свои восторги"></textarea>
+        <label class="field-text__name">
+          <span class="field-text__name-text">Отчество*:</span>
+          <input class="field-text__input" type="text" name="middle-name" placeholder="Отчество">
+        </label>
 
-      <button class="button" type="submit">отправить отзыв</button>
+      </div>
 
-      <article class="poupup-error hidded">
-        <h2 class="poupup-error__caption"> что-то пошло не так</h2>
-        <p class="poupup-error__text">проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="button" type="button">отправить отзыв</button>
-      </article>
+      <div class="field-text">
 
-      <article class="poupup-success hidded">
-        <h2 class="poupup-success__caption"> что-то пошло не так</h2>
-        <p class="poupup-success__text">проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="button" type="button">закрыть окно</button>
-      </article>
+        <span class="field-text__headline">Контактная информация:</span>
+        <label class="field-text__name">
+          <span class="field-text__name-text">Контактный телефон*:</span>
+          <input class="field-text__input" type="tel" name="tel" pattern="^[ 0-9]+$" placeholder="Bведите телефон">
+        </label>
+
+        <label class="field-text__name">
+          <span class="field-text__name-text">Электронная почта*:</span>
+          <input class="field-text__input" type="email" name="email" placeholder="Введите e-mail">
+        </label>
+
+      </div>
+
+      <div class="field-radio">
+        <span class="field-radio__headline">Ваше общее впечатление:</span>
+
+        <label class="field-radio__name">
+          <input class="field-radio__input" type="radio" name="impression" value="+" checked>
+          <span class="field-radio__name-text">Скорее положительное</span>
+        </label>
+
+        <label class="field-radio__name">
+          <input class="field-radio__input" type="radio" name="impression" value="-">
+          <span class="field-radio__name-text">Скорее отрицательное</span>
+        </label>
+
+        <label class="field-radio__name">
+          <input class="field-radio__input" type="radio" name="impression" value="?">
+          <span class="field-radio__name-text">Затрудняюсь ответить</span>
+        </label>
+
+      </div>
+
+      <div class="field-checkbox">
+        <span class="fedback-form__headline">Посещенные достопримечательности:</span>
+
+        <label class="field-checkbox__name">
+          <input class="field-checkbox__input" type="checkbox" name="visited" value="devils bridge" checked>
+          <span class="field-checkbox__name-text">Мост Дьявола</span>
+        </label>
+
+        <label class="field-checkbox__name">
+          <input class="field-checkbox__input" type="checkbox" name="visited" value="mountain bell" checked>
+          <span class="field-checkbox__name-text">Гора-Колокол</span>
+        </label>
+
+        <label class="field-checkbox__name">
+          <input class="field-checkbox__input" type="checkbox" name="visited" value="slide park" checked>
+          <span class="field-checkbox__name-text">Слайд-парк</span>
+        </label>
+
+        <label class="field-checkbox__name">
+          <input class="field-checkbox__input" type="checkbox" name="visited" value="red rocks">
+          <span class="field-checkbox__name-text">Красные скалы</span>
+        </label>
+
+      </div>
+
+      <div class="field-text">
+        <label class="field-text__name">
+          <span class="field-text__title  field-text__title--textarea">Опишите свои эмоции:</span>
+          <textarea class="field-text__input" name="message" rows="3" placeholder="Опишите подробно все свои восторги"></textarea>
+        </label>
+      </div>
+
+      <button class="btn">Отправить отзыв</button>
+
+      <section class="poupup">
+        <h2 class="poupup__title"> Что-то пошло не так</h2>
+        <p class="poupup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="btn" type="button">Отправить отзыв</button>
+      </section>
+
+      <section class="poupup">
+        <h2 class="poupup__title">Ваш отзыв отправлен!</h2>
+        <p class="poupup__text">Спасибо за ваше участие. ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <button class="btn" type="button">Закрыть окно</button>
+      </section>
 
     </form>
 
@@ -99,22 +140,18 @@
 
   <footer class="page-footer">
 
-    <a class="link-visitsedona" href="https://htmlacademy.ru/intensive/adaptive">#VISITSEDONA</a>
+    <a class="page-footer__link-visitsedona" href="https://htmlacademy.ru/intensive/adaptive">#VISITSEDONA</a>
 
     <div class="social">
-      <a class="social__link social__link_tw" href="https://twitter.com">tw</a>
-      <a class="social__link social__link_fb" href="https://www.facebook.com">fb</a>
-      <a class="social__link social__link_youtube" href="https://www.youtube.com">youtube</a>
+      <a class="social__link  social__link--tw" href="https://twitter.com">Twitter</a>
+      <a class="social__link  social__link--fb" href="https://www.facebook.com">Facebook</a>
+      <a class="social__link  social__link--youtube" href="https://www.youtube.com">Youtube</a>
     </div>
 
-    <div class="academy">
-      <span class="academy__text">разработано</span>
-      <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <div class="page-footer__copyright">
+      <span class="page-footer__text">Разработано</span>
+      <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
 
   </footer>
-
-
-
-
 </body>
