@@ -1,0 +1,184 @@
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 1.500em; }
+
+h1,
+h2,
+h3,
+p {
+  margin: 0; }
+
+h1,
+h2,
+h3 {
+  font-size: 1.286em;
+  font-weight: 700px;
+  line-height: 1.857em; }
+
+p {
+  color: #333333; }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
+li {
+  list-style: none; }
+
+ul {
+  margin: 0;
+  padding-left: 0; }
+
+.benefit {
+  text-transform: uppercase;
+  outline: 2px dotted red; }
+
+.benefit__inner {
+  outline: 2px dotted blue; }
+
+.benefit__inner--theme-blue {
+  color: #ffffff;
+  background-color: #81b3d2; }
+
+.benefit__inner--theme-white {
+  color: #000000;
+  background-color: #ffffff; }
+
+.benefit__inner--theme-gray {
+  color: #000000;
+  background-color: #eeeeee; }
+
+.benefit__inner--theme-dark-gray {
+  color: #333333; }
+
+.btn {
+  padding: 21px 47px;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 1.500em;
+  font-weight: 700;
+  line-height: 1.857em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #81b3d2; }
+
+.feedback-form {
+  background-color: #ffffff;
+  outline: 2px dotted red; }
+
+.fedback-form__headline {
+  text-transform: uppercase; }
+
+.field-checkbox {
+  outline: 2px dotted blue; }
+
+.field-radio {
+  outline: 2px dotted blue; }
+
+.field-radio__headline {
+  text-transform: uppercase; }
+
+.field-text {
+  outline: 2px dotted blue; }
+
+.field-text__name-text {
+  text-transform: uppercase; }
+
+.foto {
+  background-color: #ffffff;
+  outline: 2px dotted red; }
+
+.foto__descr {
+  outline: 2px dotted blue; }
+
+.foto__title {
+  line-height: 1.714em;
+  text-transform: uppercase; }
+
+.foto__author {
+  line-height: 1.714em; }
+
+.foto__like {
+  line-height: 1.714em;
+  font-weight: 700;
+  color: #000000; }
+
+.intro {
+  text-transform: uppercase;
+  background-color: #ffffff;
+  outline: 2px dotted red; }
+
+.intro__title {
+  color: #000000; }
+
+.intro__text {
+  line-height: 1.714em; }
+
+.main-nav {
+  outline: 2px dotted red; }
+
+.nav-list {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  outline: 2px dotted orange; }
+
+.nav-list a:visited {
+  color: #ffffff; }
+
+.page-footer {
+  text-transform: uppercase;
+  background-color: #fefefe;
+  outline: 2px dotted red; }
+
+.page-footer__link-visitsedona {
+  font-size: 1.500em;
+  font-weight: 700;
+  line-height: 1.857em;
+  color: #000000;
+  outline: 2px dotted blue; }
+
+.page-footer__text {
+  color: #000000; }
+
+.page-footer__copyright {
+  outline: 2px dotted blue; }
+
+.poupup {
+  background-color: #ffffff;
+  text-transform: uppercase;
+  outline: 2px dotted green; }
+
+.poupup__text {
+  line-height: 1.714em; }
+
+.search {
+  text-transform: uppercase;
+  background-color: #ffffff;
+  outline: 2px dotted red; }
+
+.search__caption {
+  color: #000000; }
+
+.search__text {
+  line-height: 1.714em;
+  color: #333333; }
+
+.social {
+  outline: 2px dotted blue; }
+
+.video {
+  background-color: #ffffff;
+  outline: 2px dotted red;
+  text-transform: uppercase; }
+
+.video__text {
+  line-height: 1.714em; }
