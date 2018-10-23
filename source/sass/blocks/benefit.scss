@@ -1,0 +1,33 @@
+.benefit {
+  text-transform: uppercase;
+  outline: 2px dotted red;
+}
+
+.benefit__inner {
+  outline: 2px dotted blue;
+}
+
+.benefit__title {}
+
+.benefit__cont {}
+
+.benefit__text {}
+
+.benefit__inner--theme-blue {
+  color: $second-color; //белый
+  background-color: $main-color; //синий
+}
+
+.benefit__inner--theme-white {
+  color: $third-color; //черный
+  background-color: $second-color; //белый
+}
+
+.benefit__inner--theme-gray {
+  color: $third-color;
+  background-color: $light-gray;
+}
+
+.benefit__inner--theme-dark-gray {
+  color: $darker-gray;
+}

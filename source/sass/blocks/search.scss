@@ -1,0 +1,14 @@
+.search {
+  text-transform: uppercase;
+  background-color: $second-color;
+  outline: 2px dotted red;
+}
+
+.search__caption {
+  color: $third-color;
+}
+
+.search__text {
+  line-height: 1.714em;
+  color: $darker-gray;
+}

@@ -1,0 +1,39 @@
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 1.500em;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 1.286em;
+  font-weight: 700px;
+  line-height: 1.857em;
+}
+
+p {
+  color: $darker-gray;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}

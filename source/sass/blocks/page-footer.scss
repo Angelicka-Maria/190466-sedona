@@ -1,0 +1,21 @@
+.page-footer {
+  text-transform: uppercase;
+  background-color: $very-blonded-gray;
+  outline: 2px dotted red;
+}
+
+.page-footer__link-visitsedona {
+  font-size: 1.500em;
+  font-weight: 700;
+  line-height: 1.857em;
+  color: $third-color;
+  outline: 2px dotted blue;
+}
+
+.page-footer__text {
+  color: $third-color;
+}
+
+.page-footer__copyright {
+  outline: 2px dotted blue;
+}

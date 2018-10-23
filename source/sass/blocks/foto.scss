@@ -1,0 +1,23 @@
+.foto {
+  background-color: $second-color;
+  outline: 2px dotted red;
+}
+
+.foto__descr {
+  outline: 2px dotted blue;
+}
+
+.foto__title {
+  line-height: 1.714em;
+  text-transform: uppercase;
+}
+
+.foto__author {
+  line-height: 1.714em;
+}
+
+.foto__like {
+  line-height: 1.714em;
+  font-weight: 700;
+  color: $third-color;
+}
