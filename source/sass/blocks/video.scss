@@ -1,9 +1,9 @@
 .video {
-  background-color: $second-color;
+  //background-color: $second-color;
   outline: 2px dotted red;
   text-transform: uppercase;
 }
 
 .video__text {
-  line-height: 1.714em;
+  line-height: $line-height--larger; //24px
 }

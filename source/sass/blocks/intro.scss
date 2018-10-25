@@ -1,14 +1,10 @@
 .intro {
   text-transform: uppercase;
 
-  background-color: $second-color;
+  background-color: #ffffff;
   outline: 2px dotted red;
 }
 
-.intro__title {
-  color: $third-color;
-}
-
 .intro__text {
-  line-height: 1.714em;
+  line-height: $line-height--larger; //24px
 }

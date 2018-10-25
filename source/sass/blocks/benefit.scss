@@ -7,27 +7,25 @@
   outline: 2px dotted blue;
 }
 
-.benefit__title {}
-
-.benefit__cont {}
-
-.benefit__text {}
-
 .benefit__inner--theme-blue {
-  color: $second-color; //белый
-  background-color: $main-color; //синий
+  color: #ffffff;
+  background-color: $color-main;
 }
 
 .benefit__inner--theme-white {
-  color: $third-color; //черный
-  background-color: $second-color; //белый
+  color: #000000;
+  background-color: #ffffff;
 }
 
-.benefit__inner--theme-gray {
-  color: $third-color;
-  background-color: $light-gray;
+.benefit__inner--theme-text-gray {
+  color: $gray--darken;
 }
 
-.benefit__inner--theme-dark-gray {
-  color: $darker-gray;
+.benefit__text--theme-text-gray {
+  color: $gray--darken;
+}
+
+.benefit__inner--theme-gray-lighten {
+  color: #000000;
+  background-color: $gray--lighten;
 }

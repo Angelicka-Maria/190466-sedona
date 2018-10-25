@@ -1,18 +1,16 @@
 .nav-list {
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 40px;
-  color: $second-color;
+  font-size: $font-size--larger;
+  font-weight: $font-weight--bold;
+  line-height: $line-height--x-large;
   text-transform: uppercase;
-  background-color: $main-color;
+  background-color: $color-main;
   outline: 2px dotted orange;
 }
 
-.nav-list a:visited {
-  color: $second-color;
+.nav-list__item a {
+  color: #ffffff;
+
+  &:visited {
+    color: #ffffff
+  }
 }
-
-
-.nav-list__item {}
-
-.nav-list__item--active {}

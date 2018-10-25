@@ -1,14 +1,15 @@
 .search {
   text-transform: uppercase;
-  background-color: $second-color;
+  background-color: #ffffff;
   outline: 2px dotted red;
 }
 
 .search__caption {
-  color: $third-color;
+  font-size: $font-size--large;
+  color: #000000;
 }
 
 .search__text {
-  line-height: 1.714em;
-  color: $darker-gray;
+  line-height: $line-height--larger;
+  color: $gray--darken;
 }

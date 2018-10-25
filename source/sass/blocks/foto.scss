@@ -1,5 +1,5 @@
 .foto {
-  background-color: $second-color;
+  //background-color: $second-color;
   outline: 2px dotted red;
 }
 
@@ -8,16 +8,19 @@
 }
 
 .foto__title {
-  line-height: 1.714em;
+  font-size: $font-size--content; //14px
+  line-height: $line-height--larger; //24px
   text-transform: uppercase;
 }
 
 .foto__author {
-  line-height: 1.714em;
+  font-size: $font-size--content; //14px
+  line-height: $line-height--larger; //24px
 }
 
 .foto__like {
-  line-height: 1.714em;
-  font-weight: 700;
-  color: $third-color;
+  font-size: $font-size--content; //14px
+  font-weight: $font-weight--bold;
+  line-height: $line-height--larger; //24px
+  //color: $third-color;
 }

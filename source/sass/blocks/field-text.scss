@@ -3,5 +3,12 @@
 }
 
 .field-text__name-text {
+  line-height: $line-height--large;
   text-transform: uppercase;
+}
+
+.field-text__input::placeholder {
+  font-size: $font-size--larger;
+  font-weight: $font-weight--bold;
+  line-height: $line-height--large;
 }
