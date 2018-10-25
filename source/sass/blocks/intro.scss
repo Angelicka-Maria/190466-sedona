@@ -1,10 +1,8 @@
 .intro {
   text-transform: uppercase;
-
   background-color: #ffffff;
-  outline: 2px dotted red;
 }
 
 .intro__text {
-  line-height: $line-height--larger; //24px
+  line-height: $line-height--larger;
 }

@@ -1,10 +1,15 @@
 .nav-list {
   font-size: $font-size--larger;
-  font-weight: $font-weight--bold;
+  font-weight: 700;
   line-height: $line-height--x-large;
   text-transform: uppercase;
   background-color: $color-main;
-  outline: 2px dotted orange;
+}
+
+.nav-list__item {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
 }
 
 .nav-list__item a {

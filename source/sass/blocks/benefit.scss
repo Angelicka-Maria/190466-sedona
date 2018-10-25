@@ -1,31 +1,22 @@
 .benefit {
   text-transform: uppercase;
-  outline: 2px dotted red;
 }
 
 .benefit__inner {
-  outline: 2px dotted blue;
-}
-
-.benefit__inner--theme-blue {
-  color: #ffffff;
-  background-color: $color-main;
-}
-
-.benefit__inner--theme-white {
   color: #000000;
   background-color: #ffffff;
+
+  &--theme-blue {
+    color: #ffffff;
+    background-color: $color-main;
+  }
+
+  &--theme-gray-lighten {
+    color: #000000;
+    background-color: $gray--lighten;
+  }
 }
 
-.benefit__inner--theme-text-gray {
+.benefit__text--text-gray {
   color: $gray--darken;
-}
-
-.benefit__text--theme-text-gray {
-  color: $gray--darken;
-}
-
-.benefit__inner--theme-gray-lighten {
-  color: #000000;
-  background-color: $gray--lighten;
 }

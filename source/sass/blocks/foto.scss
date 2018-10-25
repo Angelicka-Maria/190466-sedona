@@ -1,26 +1,16 @@
-.foto {
-  //background-color: $second-color;
-  outline: 2px dotted red;
-}
-
-.foto__descr {
-  outline: 2px dotted blue;
-}
-
 .foto__title {
-  font-size: $font-size--content; //14px
-  line-height: $line-height--larger; //24px
+  font-size: $font-size--content;
+  line-height: $line-height--larger;
   text-transform: uppercase;
 }
 
 .foto__author {
-  font-size: $font-size--content; //14px
-  line-height: $line-height--larger; //24px
+  font-size: $font-size--content;
+  line-height: $line-height--larger;
 }
 
 .foto__like {
-  font-size: $font-size--content; //14px
-  font-weight: $font-weight--bold;
-  line-height: $line-height--larger; //24px
-  //color: $third-color;
+  font-size: $font-size--content;
+  font-weight: 700;
+  line-height: $line-height--larger;
 }
