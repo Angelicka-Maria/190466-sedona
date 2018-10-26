@@ -1,0 +1,14 @@
+.search {
+  text-transform: uppercase;
+  background-color: #ffffff;
+}
+
+.search__caption {
+  font-size: $font-size--large;
+  color: #000000;
+}
+
+.search__text {
+  line-height: $line-height--larger;
+  color: $gray--darken;
+}

@@ -1,0 +1,21 @@
+.nav-list {
+  font-size: $font-size--larger;
+  font-weight: 700;
+  line-height: $line-height--x-large;
+  text-transform: uppercase;
+  background-color: $color-main;
+}
+
+.nav-list__item {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.nav-list__item a {
+  color: #ffffff;
+
+  &:visited {
+    color: #ffffff
+  }
+}

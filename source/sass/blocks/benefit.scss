@@ -1,0 +1,22 @@
+.benefit {
+  text-transform: uppercase;
+}
+
+.benefit__inner {
+  color: #000000;
+  background-color: #ffffff;
+
+  &--theme-blue {
+    color: #ffffff;
+    background-color: $color-main;
+  }
+
+  &--theme-gray-lighten {
+    color: #000000;
+    background-color: $gray--lighten;
+  }
+}
+
+.benefit__text--text-gray {
+  color: $gray--darken;
+}
