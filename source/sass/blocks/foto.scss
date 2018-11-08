@@ -1,3 +1,10 @@
+.foto {margin: 0;}
+
+.foto__img-tab,
+.foto__img-desktop {
+  display: none;
+}
+
 .foto__title {
   font-size: $font-size--content;
   line-height: $line-height--larger;
@@ -13,4 +20,32 @@
   font-size: $font-size--content;
   font-weight: 700;
   line-height: $line-height--larger;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main figure:nth-of-type(1) {
+    flex-basis: 648px;
+  }
+
+  .foto__img-mob {
+    display: none;
+  }
+
+  .foto__img-tab {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main figure:nth-of-type(1) {
+    flex-basis: 1200px;
+  }
+
+  .foto__img-tab {
+    display: none;
+  }
+
+  .foto__img-desktop {
+    display: block;
+  }
 }

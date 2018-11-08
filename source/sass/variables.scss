@@ -9,12 +9,15 @@ $gray--darken: #333333; //51
 $font-family: "PT Sans", "Arial", sans-serif;
 
 $font-size--content: 14px;
-$font-size--larger: 1.286em; // больш // 18px;
-$font-size--large: 1.500em; // большой // 21px;
+$font-size--larger: 18px;
+$font-size--large: 21px;
 
-$font-size--h1: 1.286em; //18px
+$font-size--h1: 18px;
 
-$line-height--content: 1.500em; // контентный, стандартный // 21px
-$line-height--larger: 1.714em; // больше // 24px
-$line-height--large: 1.857em; // большой// 26px
-$line-height--x-large: 2.857em; // очень большой // 40px
+$line-height--content: 21px;
+$line-height--larger: 24px;
+$line-height--large: 26px;
+$line-height--x-large: 40px;
+
+$tablet-width: 768px;
+$desktop-width: 1200px;

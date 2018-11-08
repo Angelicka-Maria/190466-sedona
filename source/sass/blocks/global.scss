@@ -8,13 +8,12 @@ html {
   box-sizing: inherit;
 }
 
-
-
 body {
   font-family: $font-family;
   font-size: $font-size--content;
   font-weight: 400;
   line-height: $line-height--content;
+  margin: 0 auto;
 }
 
 h1,
@@ -35,4 +34,22 @@ h3 {
 a {
   text-decoration: none;
   cursor: pointer;
+}
+
+.site-wrapper {
+  margin: 0 auto;
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .site-wrapper {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-wrapper {
+    width: 1200px;
+    box-shadow: -10px 0px 10px -5px #cccccc, 10px 0px 10px -5px #cccccc;
+  }
 }

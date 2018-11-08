@@ -1,7 +1,16 @@
 .video {
+  margin: 0 auto;
   text-transform: uppercase;
 }
 
 .video__text {
   line-height: $line-height--larger;
+}
+
+@media (min-width: $tablet-width) {
+  width: 648px;
+}
+
+@media (min-width: $desktop-width) {
+  width: 800px;
 }
