@@ -1,4 +1,36 @@
+.field-checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
 .field-checkbox__name-text {
   font-size: $font-size--larger;
   line-height: $line-height--large;
+}
+
+@media (min-width: $tablet-width) {
+  .field-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .fedback-checkbox__headline {
+    flex-basis: 100%;
+  }
+
+  .field-checkbox__name {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-checkbox--mod-flex {
+    display: flex;
+    flex-direction: row;
+  }
+
+     .field-checkbox__name {
+    flex-basis: 25%;
+  }
 }

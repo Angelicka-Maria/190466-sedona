@@ -1,5 +1,6 @@
 .video {
   margin: 0 auto;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -8,9 +9,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  width: 648px;
+  .video {
+    padding: 0 60px 0 60px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  width: 800px;
+ padding: 0 200px 0 200px;
 }

@@ -1,42 +1,15 @@
-.page-main__main-img-mob {
-  margin-top: -25px;
-}
-
-.page-main__main-img-tab,
-.page-main__main-img-desktop {
-  display: none;
-}
-
 .page-main__map {
   width: 100%;
 }
 
-@media (min-width: $tablet-width) and (max-width:$desktop-width) {
-  .page-main__main-img-mob {
-    display: none;
-  }
-
-  .page-main__main-img-tab {
-    display: block;
-    margin-top: -25px;
-  }
-
-  .page-main {
+@media (min-width: $tablet-width) {
+  page-main {
     display: flex;
     flex-wrap: wrap;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-main__main-img-mob {
-    display: none;
-  }
-
-  .page-main__main-img-desktop {
-    display: block;
-    margin-top: -25px;
-  }
-
   .page-main {
     display: flex;
     flex-wrap: wrap;

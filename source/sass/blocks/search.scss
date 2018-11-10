@@ -1,5 +1,6 @@
 .search {
-  min-height: 285px;
+  min-height: 288px;
+  padding: 0 20px;
   text-transform: uppercase;
   background-color: #ffffff;
 }
@@ -14,14 +15,18 @@
   color: $gray--darken;
 }
 
-@media (min-width: $tablet-width) and (max-width:$desktop-width) {
+@media (min-width: $tablet-width){
   .search {
+    width: 450px;
     min-height: 320px;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .search {
-    min-height: 331px;
+    width: 460px;
+    min-height: 330px;
   }
 }

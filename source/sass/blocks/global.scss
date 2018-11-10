@@ -38,12 +38,11 @@ a {
 
 .site-wrapper {
   margin: 0 auto;
-  width: 320px;
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .site-wrapper {
-    width: 768px;
+    width: 100%;
   }
 }
 
