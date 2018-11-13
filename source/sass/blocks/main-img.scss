@@ -17,14 +17,15 @@
   margin: 0 auto;
 }
 
-@media (min-width: $tablet-width){
+@media (min-width: $tablet-width) {
   .main-img {
     margin-top: 0;
     padding: 76px 0px 92px 0;
     background: none;
     background-color: #7098bd;
-    background: url(../../img/bg-intro-triangle-tablet.svg)  no-repeat bottom, url(../../img/bg-back-tablet@1x.jpg) center cover;
-    }
+    background: url(../../img/bg-intro-triangle-tablet.svg) no-repeat bottom, url(../../img/bg-back-tablet@1x.jpg) center;
+    background-size: cover;
+  }
 
   .main-img__main-img-mob {
     display: none;

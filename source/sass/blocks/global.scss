@@ -40,7 +40,7 @@ a {
   margin: 0 auto;
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+@media (min-width: $tablet-width){
   .site-wrapper {
     width: 100%;
   }
@@ -48,7 +48,7 @@ a {
 
 @media (min-width: $desktop-width) {
   .site-wrapper {
-    width: 1200px;
+    width: 1180px;
     box-shadow: -10px 0px 10px -5px #cccccc, 10px 0px 10px -5px #cccccc;
   }
 }
