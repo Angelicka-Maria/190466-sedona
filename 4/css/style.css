@@ -344,13 +344,13 @@ a {
 .site-wrapper {
   margin: 0 auto; }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) {
   .site-wrapper {
     width: 100%; } }
 
 @media (min-width: 1200px) {
   .site-wrapper {
-    width: 1200px;
+    width: 1180px;
     -webkit-box-shadow: -10px 0px 10px -5px #cccccc, 10px 0px 10px -5px #cccccc;
             box-shadow: -10px 0px 10px -5px #cccccc, 10px 0px 10px -5px #cccccc; } }
 
@@ -696,7 +696,8 @@ a {
     padding: 76px 0px 92px 0;
     background: none;
     background-color: #7098bd;
-    background: url(../../img/bg-intro-triangle-tablet.svg) no-repeat bottom, url(../../img/bg-back-tablet@1x.jpg) center cover; }
+    background: url(../../img/bg-intro-triangle-tablet.svg) no-repeat bottom, url(../../img/bg-back-tablet@1x.jpg) center;
+    background-size: cover; }
   .main-img__main-img-mob {
     display: none; }
   .main-img__main-img-tab {
