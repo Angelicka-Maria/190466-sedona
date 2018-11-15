@@ -15,29 +15,29 @@
     <header class="page-header">
 
       <nav class="main-nav">
-        <button class="main-nav__btn-close" type="button">Закрыть меню</button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="nav-list">
           <li class="nav-list__item"><a href="index.html">Главная</a></li>
           <li class="nav-list__item"><a href="photo.html">Фото и видео</a></li>
           <li class="nav-list__item  nav-list__item--active"><a>Форма отзыва</a></li>
           <li class="nav-list__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
         </ul>
-
-        <a href="index.html">
-          <img class="nav-list__item-logo-mob" src="./img/logo-sedona-mobile.svg" alt="logo" width="102" height="83">
-          <img class="nav-list__item-logo-tab" src="./img/logo-sedona-tablet.svg" alt="logo" width="102" height="83">
-          <img class="nav-list__item-logo-desktop" src="./img/logo-sedona-desktop.svg" alt="logo" width="188" height="96">
-        </a>
-
       </nav>
+
+      <a href="index.html">
+        <picture class="main-nav__logo">
+          <source media="(min-width: 1200px)" srcset="./img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="./img/logo-sedona-tablet.svg">
+          <img srcset="./img/logo-sedona-mobile.svg" alt="Logo Sedona">
+        </picture>
+      </a>
+
     </header>
 
     <main class="page-main">
 
       <div class="main-img">
-        <img class="main-img__main-img-mob" src="./img/text-sedona.svg" width="227" height="39" alt="Седона">
-        <img class="main-img__main-img-tab" src="./img/text-sedona.svg" width="462" height="76" alt="Седона">
-        <img class="main-img__main-img-desktop" src="./img/text-sedona.svg" width="460" height="76" alt="Седона">
+        <img class="main-img__img" src="./img/text-sedona.svg" alt="Седона">
       </div>
 
       <div class="intro">
