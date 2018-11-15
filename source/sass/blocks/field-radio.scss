@@ -12,10 +12,9 @@
   line-height: $line-height--large;
 }
 
-@media (min-width: $tablet-width) {
-  .field-radio--mod-grid {
+.field-radio--mod-grid {
+  @media (min-width: $tablet-width) {
     order: -1;
     width: 50%;
   }
-  }
-
+}

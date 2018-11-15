@@ -18,42 +18,48 @@
   line-height: $line-height--large;
 }
 
-@media (max-width: $mobile-width-only) {
+@media (max-width: $mobile-width) {
   .field-text__name {
     width: 100%;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .field-text--mod-width {
+.field-text--mod-width {
+  @media (min-width: $tablet-width) {
     width: 50%;
   }
 
-  .field-text--mod-flex {
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
+}
+
+.field-text--mod-flex {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .field-radio--mod-grid {
-    margin-right: auto;
-  }
-
-  .field-text--mod-width {
-    width: 400px;
-  }
-
-  .field-text--mod-flex {
+  @media (min-width: $desktop-width) {
     flex-direction: row;
   }
+}
 
-  .field-text__input[type="tel"] {
+.field-radio--mod-grid {
+  @media (min-width: $desktop-width) {
+    margin-right: auto;
+  }
+}
+
+.field-text__input[name="tel"] {
+  @media (min-width: $desktop-width) {
     width: 260px;
   }
+}
 
-  .field-text__input[type="email"] {
+.field-text__input[name="email"] {
+  @media (min-width: $desktop-width) {
     width: 260px;
   }
 }

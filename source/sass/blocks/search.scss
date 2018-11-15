@@ -3,6 +3,18 @@
   padding: 0 20px;
   text-transform: uppercase;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 450px;
+    min-height: 320px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 460px;
+    min-height: 330px;
+  }
 }
 
 .search__caption {
@@ -13,20 +25,4 @@
 .search__text {
   line-height: $line-height--larger;
   color: $gray--darken;
-}
-
-@media (min-width: $tablet-width){
-  .search {
-    width: 450px;
-    min-height: 320px;
-    margin: 0 auto;
-    padding: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .search {
-    width: 460px;
-    min-height: 330px;
-  }
 }

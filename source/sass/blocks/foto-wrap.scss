@@ -3,28 +3,25 @@
   flex-wrap: wrap;
   width: 100%;
   padding: 0 20px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .foto-wrap .foto {
   padding: 0;
   outline: 2px dotted red;
-}
 
-@media (min-width: $tablet-width) {
-  .foto-wrap{
-    padding: 0 60px 0 60px;
-  }
-  .foto-wrap .foto{
+  @media (min-width: $tablet-width) {
     flex-basis: 50%;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .foto-wrap{
-    padding: 0;
-  }
-  .foto-wrap .foto{
+  @media (min-width: $desktop-width) {
     flex-basis: 33.3333%;
   }
 }
-

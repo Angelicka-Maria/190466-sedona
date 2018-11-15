@@ -2,18 +2,12 @@
   margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
-}
 
-.video__text {
-  line-height: $line-height--larger;
-}
-
-@media (min-width: $tablet-width) {
-  .video {
+  @media (min-width: $tablet-width) {
     padding: 0 60px 0 60px;
   }
 }
 
-@media (min-width: $desktop-width) {
- padding: 0 200px 0 200px;
+.video__text {
+  line-height: $line-height--larger;
 }
