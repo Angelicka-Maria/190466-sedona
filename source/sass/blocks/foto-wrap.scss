@@ -12,16 +12,3 @@
     padding: 0;
   }
 }
-
-.foto-wrap .foto {
-  padding: 0;
-  outline: 2px dotted red;
-
-  @media (min-width: $tablet-width) {
-    flex-basis: 50%;
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-basis: 33.3333%;
-  }
-}

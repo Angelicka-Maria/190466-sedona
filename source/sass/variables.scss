@@ -4,10 +4,10 @@ $color-main--lightest: #94b9d2;
 $color-main--lighten: #9ac2db;
 $color-main--darken: #5496bd;
 
-$color-menu--down: rgba(0,0,0, 0.3);
+$color-menu--down: rgba(0, 0, 0, 0.3);
 $color-menu--active: #766357;
 $color-menu--active-hover: #604e43;
-$color-menu--active-down: rgba(118,99,87, 0.3);
+$color-menu--active-down: rgba(118, 99, 87, 0.3);
 
 $gray--lightest: #fefefe; //254
 $gray--lighten: #eeeeee; //238
@@ -28,6 +28,6 @@ $line-height--larger: 24px;
 $line-height--large: 26px;
 $line-height--x-large: 40px;
 
+$mobile-width: 767px;
 $tablet-width: 768px;
 $desktop-width: 1200px;
-$mobile-width: 767px;

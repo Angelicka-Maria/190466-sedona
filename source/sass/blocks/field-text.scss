@@ -1,6 +1,10 @@
 .field-text {
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 .field-text__headline {
@@ -24,7 +28,7 @@
   }
 }
 
-.field-text--mod-width {
+.field-text--width {
   @media (min-width: $tablet-width) {
     width: 50%;
   }
@@ -34,7 +38,7 @@
   }
 }
 
-.field-text--mod-flex {
+.field-text--flex {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -46,7 +50,7 @@
   }
 }
 
-.field-radio--mod-grid {
+.field-radio--grid {
   @media (min-width: $desktop-width) {
     margin-right: auto;
   }

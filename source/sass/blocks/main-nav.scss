@@ -28,7 +28,7 @@
   position: absolute;
   width: 22px;
   height: 22px;
-  background-image: url(../../img/icon-menu.svg);
+  background-image: url(../img/icon-menu.svg);
 }
 
 .main-nav--opened .main-nav__toggle::before {
@@ -38,7 +38,7 @@
   right: 0;
   width: 22px;
   height: 22px;
-  background-image: url(../../img/icon-cross.svg);
+  background-image: url(../img/icon-cross.svg);
 }
 
 .main-nav__logo img {

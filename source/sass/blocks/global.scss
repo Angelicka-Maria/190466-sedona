@@ -2,14 +2,14 @@
   font-weight: normal;
   font-family: "PT Sans";
   font-style: normal;
-  src: url("../../fonts/ptsans.woff") format("woff"), url("../../fonts/ptsans.woff2") format("woff2");
+  src: url("../fonts/ptsans.woff") format("woff"), url("../fonts/ptsans.woff2") format("woff2");
 }
 
 @font-face {
   font-weight: bold;
   font-family: "PT Sans";
   font-style: normal;
-  src: url("../../fonts/ptsansbold.woff") format("woff"), url("../../fonts/ptsansbold.woff2") format("woff2");
+  src: url("../fonts/ptsansbold.woff") format("woff"), url("../fonts/ptsansbold.woff2") format("woff2");
 }
 
 html {
@@ -55,9 +55,7 @@ a {
   cursor: pointer;
 }
 
-.site-wrapper {
-  margin: 0 auto;
-}
+
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
