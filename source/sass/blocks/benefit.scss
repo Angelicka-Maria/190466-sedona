@@ -1,8 +1,23 @@
 .benefit {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   text-transform: uppercase;
 }
 
+.benefit img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
 .benefit__inner {
+  @media (min-width: $tablet-width) {
+    flex-basis: 33.3333%;
+  }
+
   color: #000000;
   background-color: #ffffff;
 
@@ -14,6 +29,27 @@
   &--theme-gray-lighten {
     color: #000000;
     background-color: $gray--lighten;
+  }
+}
+
+.benefit__inner-img {
+  @media (min-width: $tablet-width) {
+    flex-basis: 66.6667%;
+    height: 256px;
+  }
+}
+
+.benefit__wrap {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.benefit__wrap .benefit__inner {
+  @media (min-width: $tablet-width) {
+    min-height: 330px;
   }
 }
 

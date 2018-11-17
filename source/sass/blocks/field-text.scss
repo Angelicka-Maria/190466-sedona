@@ -1,3 +1,16 @@
+.field-text {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+}
+
+.field-text__headline {
+  width: 100%;
+}
+
 .field-text__name-text {
   line-height: $line-height--large;
   text-transform: uppercase;
@@ -7,4 +20,50 @@
   font-size: $font-size--larger;
   font-weight: 700;
   line-height: $line-height--large;
+}
+
+@media (max-width: $mobile-width) {
+  .field-text__name {
+    width: 100%;
+  }
+}
+
+.field-text--width {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
+}
+
+.field-text--flex {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.field-radio--grid {
+  @media (min-width: $desktop-width) {
+    margin-right: auto;
+  }
+}
+
+.field-text__input[name="tel"] {
+  @media (min-width: $desktop-width) {
+    width: 260px;
+  }
+}
+
+.field-text__input[name="email"] {
+  @media (min-width: $desktop-width) {
+    width: 260px;
+  }
 }

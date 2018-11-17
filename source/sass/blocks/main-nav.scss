@@ -1,1 +1,63 @@
+.main-nav {
+  position: relative;
+}
 
+.main-nav__toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 5;
+  width: 23px;
+  height: 23px;
+  background-color: $color-main;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background-color: $color-main--hover;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-image: url(../img/icon-menu.svg);
+}
+
+.main-nav--opened .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  background-image: url(../img/icon-cross.svg);
+}
+
+.main-nav__logo img {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -51px;
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -93px;
+    display: block;
+  }
+}

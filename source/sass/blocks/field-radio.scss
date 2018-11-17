@@ -1,3 +1,12 @@
+.field-radio {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+}
+
 .field-radio__headline {
   text-transform: uppercase;
 }
@@ -5,4 +14,11 @@
 .field-radio__name-text {
   font-size: $font-size--larger;
   line-height: $line-height--large;
+}
+
+.field-radio--grid {
+  @media (min-width: $tablet-width) {
+    order: -1;
+    width: 50%;
+  }
 }

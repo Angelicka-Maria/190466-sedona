@@ -1,3 +1,41 @@
+.field-checkbox {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+.fedback-checkbox__headline {
+  @media (min-width: $tablet-width) {
+    flex-basis: 100%;
+  }
+}
+
+.field-checkbox__name {
+  @media (min-width: $tablet-width) {
+    flex-basis: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 25%;
+  }
+}
+
+.field-checkbox--flex {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 .field-checkbox__name-text {
   font-size: $font-size--larger;
   line-height: $line-height--large;

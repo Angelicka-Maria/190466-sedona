@@ -1,4 +1,13 @@
 $color-main: #81b3d2;
+$color-main--hover: #669ec0;
+$color-main--lightest: #94b9d2;
+$color-main--lighten: #9ac2db;
+$color-main--darken: #5496bd;
+
+$color-menu--down: rgba(0, 0, 0, 0.3);
+$color-menu--active: #766357;
+$color-menu--active-hover: #604e43;
+$color-menu--active-down: rgba(118, 99, 87, 0.3);
 
 $gray--lightest: #fefefe; //254
 $gray--lighten: #eeeeee; //238
@@ -6,17 +15,19 @@ $gray--darken: #333333; //51
 
 // ================
 
-$font-family: "PT Sans",
-"Arial",
-sans-serif;
+$font-family: "PT Sans", "Arial", sans-serif;
 
 $font-size--content: 14px;
-$font-size--larger: 1.286em; // больш // 18px;
-$font-size--large: 1.500em; // большой // 21px;
+$font-size--larger: 18px;
+$font-size--large: 21px;
 
-$font-size--h1: 1.286em; //18px
+$font-size--h1: 18px;
 
-$line-height--content: 1.500em; // контентный, стандартный // 21px
-$line-height--larger: 1.714em; // больше // 24px
-$line-height--large: 1.857em; // большой// 26px
-$line-height--x-large: 2.857em; // очень большой // 40px
+$line-height--content: 21px;
+$line-height--larger: 24px;
+$line-height--large: 26px;
+$line-height--x-large: 40px;
+
+$mobile-width: 767px;
+$tablet-width: 768px;
+$desktop-width: 1200px;

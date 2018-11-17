@@ -1,6 +1,20 @@
 .search {
+  min-height: 288px;
+  padding: 0 20px;
   text-transform: uppercase;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 450px;
+    min-height: 320px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 460px;
+    min-height: 330px;
+  }
 }
 
 .search__caption {

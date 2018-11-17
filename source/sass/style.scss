@@ -1,3 +1,4 @@
+@import "normalize.scss";
 @import "variables.scss";
 @import "blocks/global.scss";
 @import "blocks/benefit.scss";
@@ -7,7 +8,9 @@
 @import "blocks/field-radio.scss";
 @import "blocks/field-text.scss";
 @import "blocks/foto.scss";
+@import "blocks/foto-wrap.scss";
 @import "blocks/intro.scss";
+@import "blocks/main-img.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/nav-list.scss";
 @import "blocks/page-footer.scss";
@@ -15,5 +18,6 @@
 @import "blocks/page-main.scss";
 @import "blocks/poupup.scss";
 @import "blocks/search.scss";
-@import "blocks/social.scss";
+@import "blocks/search.scss";
+@import "blocks/site-wrapper.scss";
 @import "blocks/video.scss";
